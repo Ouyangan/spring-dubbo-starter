@@ -20,5 +20,6 @@ public class Consumer {
             Result result = msgService.sendMsg(UUID.randomUUID().toString());// 执行远程方法
             log.debug(result.toString());
         }
+        System.in.read();
     }
 }
